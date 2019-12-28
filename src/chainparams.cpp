@@ -186,10 +186,10 @@ public:
 
         // Community Fee script expects a vector of 2-of-3 multisig addresses
         vCommunityFeeAddress = {
-            "t3eC2B44yVkyj7Q7RMkfBhkDisc4ieYtv5d",
-            "t3bi7pnM4mQ6RbQZwufGDt9m2uNnxHNBk37"
+            "t3eC2B44yVky",
+            "t3bi7pnM4mQ"
         };
-        vCommunityFeeStartHeight = 5000;
+        vCommunityFeeStartHeight = 50000;
         vCommunityFeeLastHeight = 2400000;
         assert(vCommunityFeeAddress.size() <= GetLastCommunityFeeBlockHeight());
     }
