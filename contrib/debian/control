@@ -1,0 +1,17 @@
+Source: cbtc
+Section: utils
+Priority: optional
+Maintainer: The CBTC Community <cbtccommunity@gmail.com>
+Homepage: https://classicbitcoins.rocks
+Build-Depends: autoconf, automake, bsdmainutils, build-essential,
+ git, g++-multilib, libc6-dev, libtool,
+ m4, ncurses-dev, pkg-config, python,
+ unzip, wget, zlib1g-dev
+Vcs-Git: https://github.com/classicbitcoins/cbtc.git
+Vcs-Browser: https://github.com/classicbitcoins
+
+Package: cbtc
+Version: 1.4.0
+Depends: ${shlibs:Depends}
+Architecture: all
+Description: CBTC is a decentralized community project based on the Bitcoin and Zcash codebase.

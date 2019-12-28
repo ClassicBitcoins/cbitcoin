@@ -1,0 +1,5 @@
+Building CBTC
+
+See the CBTC github wiki (https://github.com/classicbitcoins/cbtc/wiki) for instructions on building cbtcd,
+the intended-for-services, no-graphical-interface, reference
+implementation of CBTC.

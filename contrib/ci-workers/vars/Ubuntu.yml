@@ -1,0 +1,4 @@
+---
+build_deps:
+  - build-essential # Depends on g++, libc6-dev, make
+  - cmake
