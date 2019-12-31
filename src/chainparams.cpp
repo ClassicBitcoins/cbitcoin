@@ -170,15 +170,15 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x0006cb3c450b5c354da33e42065505f67b2a227d524baaed793bbc79219fec58")),
-            //( 2007, uint256S("0x000000215111f83669484439371ced6e3bc48cd7e7d6be8afa18952206304a1b"))
-            //( 10000, uint256S("0x00000002ccb858ec2c35fb79ce2079333461efa50f2b59814558b9ae3ce62a40"))
+            ( 0, uint256S("0x0006cb3c450b5c354da33e42065505f67b2a227d524baaed793bbc79219fec58"))
+            ( 100, uint256S("0x00008e4b585ad61b7637369695de306638817d87a58464dc089ef0bab1eb51e9"))
+            ( 475, uint256S("0x00009c5163f7817b2ca16ec7acc4a054a94bd036148ccb7c9d6d34d4993270e0")),
             //( 20675, uint256S("0x00000004804df1618f984fef70c1a210988ade5093b6947c691422fc93013a63")) // Thaddeus Kosciuszko - 200th death anniversary (October 15 2017)
             //( 40000, uint256S("0x00000005a2d9a94e2e16f9c1e578a2eb46cc267ab7a51539d22ff8aa0096140b"))  //18-06-17  8am UTC Hooray for Zhash!
             //( 166500, uint256S("0x0000002b640d62dd0c2ab68774b05297d2aa72bd63997d3a73ad959963b148d8")),
 
-            1549553870,     // * UNIX timestamp of last checkpoint block
-            0,         // * total number of transactions between genesis and last checkpoint
+            1577745139,     // * UNIX timestamp of last checkpoint block
+            615,         // * total number of transactions between genesis and last checkpoint
                             //   (the tx=... number in the SetBestChain debug.log lines)
             1500.912865  // * estimated number of transactions per day after checkpoint
                             //   total number of tx / (checkpoint block height / (24 * 24))
