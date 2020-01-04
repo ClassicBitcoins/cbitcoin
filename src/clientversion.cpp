@@ -19,7 +19,7 @@
  * for both bitcoind and bitcoin-core, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("KSC");
+const std::string CLIENT_NAME("CBTC");
 
 /**
  * Client version number
@@ -52,7 +52,7 @@ const std::string CLIENT_NAME("KSC");
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
 #define GIT_COMMIT_ID "450323512"
-#define GIT_COMMIT_DATE "Fri, 22 Mar 2019 21:22:33 -0500"
+#define GIT_COMMIT_DATE "Tue, 31 Dec 2019 13:05:33 -0500"
 #endif
 
 #define RENDER_BETA_STRING(num) "-beta" DO_STRINGIZE(num)
