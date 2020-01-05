@@ -52,7 +52,7 @@ const std::string CLIENT_NAME("CBTC");
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
 #define GIT_COMMIT_ID "450323512"
-#define GIT_COMMIT_DATE "Tue, 31 Dec 2019 13:05:33 -0500"
+#define GIT_COMMIT_DATE "Sun, 4 Jan 2020 18:07:33 -0500"
 #endif
 
 #define RENDER_BETA_STRING(num) "-beta" DO_STRINGIZE(num)
