@@ -119,8 +119,8 @@ public:
         newTimeRule = 159300;
         eh_epoch_1 = eh200_9;
         eh_epoch_2 = eh144_5;
-        eh_epoch_1_endblock = 1710;
-        eh_epoch_2_startblock = 1700;
+        eh_epoch_1_endblock = 2160010;
+        eh_epoch_2_startblock = 2160000;
 
         genesis = CreateGenesisBlock(
             1576996750,
