@@ -337,6 +337,9 @@ int printMetrics(size_t cols, bool mining)
                     if (height >= Params().GetCommunityFeeStartHeight()) {
                         subsidy -= (subsidy * 0.05);
                     }
+                    if (height >= 170000 && height <= 190000) {
+                        subsidy -= (subsidy * 0.90);
+                    }
                     if (std::max(0, COINBASE_MATURITY - (tipHeight - height)) > 0) {
                         immature += subsidy;
                     } else {
