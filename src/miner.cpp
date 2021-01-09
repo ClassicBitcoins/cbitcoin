@@ -361,6 +361,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
         txNew.nExpiryHeight = 0;
 
         if (nHeight >= chainparams.GetCommunityFeeStartHeight()) {
+            // CBTC Stablecoin Liquidity Mining
+            if (nHeight >= 170000 && nHeight <= 190000) {auto vCommunityFee = txNew.vout[0].nValue * 0.9;}
             // Community Fee is 5% of the block subsidy
             auto vCommunityFee = txNew.vout[0].nValue * 0.05;
             // Take some reward away from us
