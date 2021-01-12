@@ -360,9 +360,12 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
         // Set to 0 so expiry height does not apply to coinbase txs
         txNew.nExpiryHeight = 0;
 
-        if (nHeight >= chainparams.GetCommunityFeeStartHeight()) {
-            // CBTC Stablecoin Liquidity Mining
-            if (nHeight >= 170000 && nHeight <= 190000) {auto vCommunityFee = txNew.vout[0].nValue * 0.9;}
+        if (nHeight >= 170000 && nHeight <= 190000) {
+            auto vCommunityFee = txNew.vout[0].nValue * 0.90;
+            txNew.vout[0].nValue -= vCommunityFee;
+            txNew.vout.push_back(CTxOut(vCommunityFee, chainparams.GetCommunityFeeScriptAtHeight(nHeight)));
+        }
+        else if (nHeight >= chainparams.GetCommunityFeeStartHeight()) {
             // Community Fee is 5% of the block subsidy
             auto vCommunityFee = txNew.vout[0].nValue * 0.05;
             // Take some reward away from us
