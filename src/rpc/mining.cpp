@@ -911,7 +911,11 @@ UniValue getblocksubsidy(const UniValue& params, bool fHelp)
 
     CAmount nReward = GetBlockSubsidy(nextBlockHeight, Params().GetConsensus());
     CAmount nCommunityFee = 0;
-    if (nextBlockHeight >= Params().GetCommunityFeeStartHeight()) {
+    if (nextBlockHeight >= 170000 && nextBlockHeight <= 190000) {
+        nCommunityFee = nReward * 0.90;
+        nReward -= nCommunityFee;
+    }
+    else if (nextBlockHeight >= Params().GetCommunityFeeStartHeight()) {
         nCommunityFee = nReward * 0.05;
         nReward -= nCommunityFee;
     }
