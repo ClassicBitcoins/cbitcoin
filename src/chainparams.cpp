@@ -173,7 +173,7 @@ public:
             ( 0, uint256S("0x0006cb3c450b5c354da33e42065505f67b2a227d524baaed793bbc79219fec58"))
             ( 100, uint256S("0x00008e4b585ad61b7637369695de306638817d87a58464dc089ef0bab1eb51e9"))
             ( 475, uint256S("0x00009c5163f7817b2ca16ec7acc4a054a94bd036148ccb7c9d6d34d4993270e0"))
-            ( 50000, uint256S("0x0000005cd0dbaa3e2e0f11a8ed520ddbe5b10a4fabd065f71738aefe1a4d02d9")),
+            ( 50000, uint256S("0x0000005cd0dbaa3e2e0f11a8ed520ddbe5b10a4fabd065f71738aefe1a4d02d9"))
             ( 160000, uint256S("0x0000001aabb1286cfe58690734becdf2bb0595a4d8dccd15d99d64abe547b966")),
 
             1610192354,     // * UNIX timestamp of last checkpoint block
