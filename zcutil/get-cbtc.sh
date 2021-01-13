@@ -4,16 +4,16 @@ sudo apt -y update
 sudo apt-get install -y libc6-dev g++-multilib python p7zip-full pwgen jq curl
 cd ~
 
-if [ -f cbtc.zip ]
+if [ -f cbitcoin.zip ]
 then
-    rm cbtc.zip
+    rm cbitcoin.zip
 fi
-wget -O cbtc.zip `curl -s 'https://api.github.com/repos/classicbitcoins/cbtc/releases/latest' | jq -r '.assets[].browser_download_url' | egrep "cbtc.+x64.zip"`
-7z x -y cbtc.zip
-chmod -R a+x ~/cbtc-pkg
-rm cbtc.zip
+wget -O cbitcoin.zip `curl -s 'https://api.github.com/repos/classicbitcoins/cbitcoin/releases/latest' | jq -r '.assets[].browser_download_url' | egrep "cbitcoin.+x64.zip"`
+7z x -y cbitcoin.zip
+chmod -R a+x ~/cbitcoin-pkg
+rm cbitcoin.zip
 
-cd ~/cbtc-pkg
+cd ~/cbitcoin-pkg
 ./fetch-params.sh
 
 if ! [[ -d ~/.cbtc ]]
