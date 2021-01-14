@@ -135,8 +135,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // use name as: echo -n hostname | sha256sum
-        vSeeds.push_back(CDNSSeedData("classicbitcoin.info", "dnsseed.classicbitcoin.info"));
-        vSeeds.push_back(CDNSSeedData("bitclassic.info", "dnsseed.bitclassic.info"));
+        vSeeds.push_back(CDNSSeedData("e76da993f26c7f952e8b97a831e4ed706a29575cff162964f07efc3211f4680b.CBTC", "dnsseed.classicbitcoin.info"));
+        vSeeds.push_back(CDNSSeedData("806d9f4706af860109b21ce1f9b30b7b234fcd46ea264fe99a1f38b78ebad63f.CBTC", "dnsseed.bitclassic.info"));
 
 
         // guarantees the first 2 characters, when base58 encoded, are "t1"
