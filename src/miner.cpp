@@ -360,7 +360,17 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
         // Set to 0 so expiry height does not apply to coinbase txs
         txNew.nExpiryHeight = 0;
 
-        if (nHeight >= 170000 && nHeight <= 190000) {
+        if (nHeight >= 295000 && nHeight <= 500000) {
+            auto vCommunityFee = txNew.vout[0].nValue * 0.90;
+            txNew.vout[0].nValue -= vCommunityFee;
+            txNew.vout.push_back(CTxOut(vCommunityFee, chainparams.GetCommunityFeeScriptAtHeight(nHeight)));
+        }        
+        else if (nHeight >= 700000 && nHeight <= 900000) {
+            auto vCommunityFee = txNew.vout[0].nValue * 0.90;
+            txNew.vout[0].nValue -= vCommunityFee;
+            txNew.vout.push_back(CTxOut(vCommunityFee, chainparams.GetCommunityFeeScriptAtHeight(nHeight)));
+        }
+        else if (nHeight >= 170000 && nHeight <= 190000) {
             auto vCommunityFee = txNew.vout[0].nValue * 0.90;
             txNew.vout[0].nValue -= vCommunityFee;
             txNew.vout.push_back(CTxOut(vCommunityFee, chainparams.GetCommunityFeeScriptAtHeight(nHeight)));
