@@ -1756,6 +1756,12 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         } else if(nHeight >= 170000 && nHeight <= 190000){
             nSubsidy = 500 * COIN;
             return nSubsidy;
+        } else if(nHeight >= 295000 && nHeight <= 500000){
+            nSubsidy = 500 * COIN;
+            return nSubsidy;
+        } else if(nHeight >= 700000 && nHeight <= 900000){
+            nSubsidy = 500 * COIN;
+            return nSubsidy;
         }
     int halvings = (nHeight - consensusParams.SubsidySlowStartShift()) / consensusParams.nSubsidyHalvingInterval;
     // Force block reward to zero when right shift is undefined.
@@ -3644,7 +3650,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
 
     // Coinbase transaction must include an output sending 5% of the block
     // reward to a community fee script.
-    if (nHeight >= 170000 && nHeight <= 190000) {
+    if (nHeight >= 295000 && nHeight <= 500000) {
         bool found = false;
         BOOST_FOREACH(const CTxOut& output, block.vtx[0].vout) {
             if (output.scriptPubKey == Params().GetCommunityFeeScriptAtHeight(nHeight)) {
