@@ -334,7 +334,7 @@ int printMetrics(size_t cols, bool mining)
                         chainActive.Contains(mapBlockIndex[hash])) {
                     int height = mapBlockIndex[hash]->nHeight;
                     CAmount subsidy = GetBlockSubsidy(height, consensusParams);
-                    if (height >= 290000 && height <= 500000) {
+                    if (height >= 295000 && height <= 500000) {
                         subsidy -= (subsidy * 0.90);
                     }
                     else if (height >= 700000 && height <= 900000) {
