@@ -51,8 +51,8 @@ const std::string CLIENT_NAME("CBTC");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "450323512"
-#define GIT_COMMIT_DATE "Sun, 4 Jan 2020 18:07:33 -0500"
+#define GIT_COMMIT_ID "ddd8ece"
+#define GIT_COMMIT_DATE "Mon, 4 Nov 2021 11:23:33 +0100"
 #endif
 
 #define RENDER_BETA_STRING(num) "-beta" DO_STRINGIZE(num)
